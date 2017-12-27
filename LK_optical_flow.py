@@ -30,6 +30,8 @@ while(True):
         frame = cv2.circle(frame,(a,b),5,color[i].tolist(),-1)
         img = cv2.add(frame,mask)
         cv2.imshow('Image',img)
+        cv2.imshow('Image1',mask)
+        cv2.imshow('Image2',frame)
         k=cv2.waitKey(30) & 0xff
         if k==27:
             break
