@@ -1,5 +1,5 @@
 import cv2
-import numpy as np
+#import numpy as np
 from matplotlib import pyplot as plt
 
 img = cv2.imread('redbox.jpeg',0)
@@ -34,3 +34,4 @@ for meth in methods:
     plt.suptitle(meth)
 
     plt.show()
+    https: // github.com / dantswain / opencv - minimal.git

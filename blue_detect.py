@@ -1,5 +1,6 @@
 import cv2
-import numpy as np 
+import numpy as np
+import
  
 # laptop wecam
 cap = cv2.VideoCapture(0) 
@@ -10,10 +11,11 @@ while(True):
 
     # Captures the live stream frame-by-frame
 	_, frame = cap.read() 
-    # Converts images from BGR to HSV
+	#Converts images from BGR to HSV
 	hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-	lower_red = np.array([110,50,50])
-	upper_red = np.array([130,255,255])
+	lower_blue = np.array([110,50,50])
+	upper_blue = np.array([130,255,255])
+	pts = deque
  
 # Here we are defining range of bluecolor in HSV
 # This creates a mask of blue coloured 
