@@ -4,8 +4,8 @@ from collections import deque
 import imutils
 
 # laptop wecam
-cap = cv2.VideoCapture(0)
-pts = deque(maxlen=10)
+cap = cv2.VideoCapture(1)
+pts = deque(maxlen=2)
 lower_blue = np.array([110, 50, 50])
 upper_blue = np.array([130, 255, 255])
 
@@ -21,8 +21,10 @@ while (True):
     # This creates a mask of blue coloured
     # objects found in the frame.
     mask = cv2.inRange(hsv, lower_blue, upper_blue)
+    #erodes small noises away
     mask=cv2.erode(mask,None,iterations=3)
-    mask = cv2.dilate(mask,None,iterations=3)
+    #accentuates the features of our blue object.
+    mask = cv2.dilate(mask,None,iterations=2)
     contours = cv2.findContours(mask.copy(),cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)[-2]
     centre = None
     if(len(contours)) > 0:
@@ -30,11 +32,20 @@ while (True):
         ((x,y),radius)=cv2.minEnclosingCircle(c)
         M=cv2.moments(c)
         centre = (int(M['m10']/M['m00']), int(M['m01']/M['m00']))
+        print(centre)
+
         if radius > 5:
             cv2.circle(frame,(int(x), int(y)),int(radius),(0,255,255),2)
             cv2.circle(frame,centre, 5 ,(0,0,255),-1)
         pts.append(centre)
-
+        if(x  < 40):
+            print("\ngo left\n")
+        if(x > 540) :
+            print("\ngo right\n")
+        if(y < 20):
+            print("\nmove back\n")
+        if(y > 280):
+            print("\nmove front\n")
         for i in xrange (1,len(pts)):
             if pts[i-1] is None or pts[i] is None :
                 continue

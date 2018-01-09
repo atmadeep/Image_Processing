@@ -1,24 +1,24 @@
+# Python program to demonstrate erosion and
+# dilation of images.
 import cv2
 import numpy as np
-face = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye = cv2.CascadeClassifier('haarcascade_eye.xml')
 
-cap = cv2.VideoCapture(0)
-while(True) :
-    ret,image=cap.read()
-    output=image.copy()
-    gray=cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-    circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT, 1.2, 100)  # cv2.cv.CV_HOUGH_GRADIENT is not used anymore.
-    if circles is not None:
-        circles = np.round(circles[0, :]).astype('int')
-        for (x, y) in circles:
-            cv2.circle(output, (x, y), r, (255, 0, 0), 4)
-            cv2.rectangle(output, (x - 5, y - 5), (x + 5, y + 5), (0, 128, 255), -1)
-    cv2.imshow('gray',image)
-    cv2.imshow('circles',output)
-    k=cv2.waitKey(30) & 0xFF
-    if k==27:
-        break
+# Reading the input image
+img = cv2.imread('input.png', 0)
 
-cap.release()
-cv2.destroyAllWindows()
+# Taking a matrix of size 5 as the kernel
+kernel = np.ones((5, 5), np.uint8)
+
+# The first parameter is the original image,
+# kernel is the matrix with which image is
+# convolved and third parameter is the number
+# of iterations, which will determine how much
+# you want to erode/dilate a given image.
+img_erosion = cv2.erode(img, kernel, iterations=1)
+img_dilation = cv2.dilate(img, kernel, iterations=1)
+
+cv2.imshow('Input', img)
+cv2.imshow('Erosion', img_erosion)
+cv2.imshow('Dilation', img_dilation)
+
+cv2.waitKey(0)
