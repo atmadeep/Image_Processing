@@ -10,9 +10,11 @@ w, h = template.shape[::-1]
 # All the 6 methods for comparison in a list
 methods = ['cv2.TM_CCOEFF', 'cv2.TM_CCOEFF_NORMED', 'cv2.TM_CCORR',
             'cv2.TM_CCORR_NORMED', 'cv2.TM_SQDIFF', 'cv2.TM_SQDIFF_NORMED']
-for meth in methods:
+instruction_photos = ["fornt.png","right.png","left.png","back.png","stop.png"]
+dir_photos = ["fornt.png","right.png","left.png","right.png","fornt.png","right.png","right.png","fornt.png","right.png","back.png","right.png","fornt.png","stop.png"]
+for current in dir_photos:
     img = img2.copy()
-    method = eval(meth)
+    method = eval('cv2.TM_SQDIFF_NORMED')
 
     # Apply template Matching
     res = cv2.matchTemplate(img,template,method)
@@ -31,7 +33,6 @@ for meth in methods:
     plt.title('Matching Result'), plt.xticks([]), plt.yticks([])
     plt.subplot(122),plt.imshow(img,cmap = 'gray')
     plt.title('Detected Point'), plt.xticks([]), plt.yticks([])
-    plt.suptitle(meth)
+    plt.suptitle(method)
 
     plt.show()
-    https: // github.com / dantswain / opencv - minimal.git

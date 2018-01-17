@@ -4,14 +4,14 @@ from collections import deque
 import imutils
 
 # laptop wecam
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 pts = deque(maxlen=2)
 lower_blue = np.array([110, 50, 50])
 upper_blue = np.array([130, 255, 255])
 
 # This drives the program into an infinite loop.
 while (True):
-
+    
     # Captures the live stream frame-by-frame
     _, frame = cap.read()
     frame = imutils.resize(frame,600)
@@ -40,12 +40,12 @@ while (True):
         pts.append(centre)
         if(x  < 40):
             print("\ngo left\n")
-        if(x > 540) :
+        if(x > 520) :
             print("\ngo right\n")
-        if(y < 20):
-            print("\nmove back\n")
-        if(y > 280):
+        if(y < 40):
             print("\nmove front\n")
+        if(y > 250):
+            print("\nmove back\n")
         for i in xrange (1,len(pts)):
             if pts[i-1] is None or pts[i] is None :
                 continue

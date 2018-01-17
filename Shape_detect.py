@@ -10,7 +10,7 @@ approx = []
 #scale of the text
 scale = 2
 #camera
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(1)
 print("press q to exit")
 
 # Define the codec and create VideoWriter object
