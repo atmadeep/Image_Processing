@@ -5,6 +5,9 @@ import imutils
 
 # laptop wecam
 cap = cv2.VideoCapture(0)
+fourcc = cv2.VideoWriter_fourcc(*'XVID')
+tracking = cv2.VideoWriter('Blue.avi', fourcc, 9.0,(640,480))
+font = cv2.FONT_HERSHEY_SIMPLEX
 pts = deque(maxlen=2)
 lower_blue = np.array([110, 50, 50])
 upper_blue = np.array([130, 255, 255])
@@ -40,30 +43,39 @@ while (True):
         pts.append(centre)
         if(x  < 40):
             print("\ngo left\n")
+            cv2.putText(frame, 'left', (280,200), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
         if(x > 520) :
             print("\ngo right\n")
+            cv2.putText(frame, 'right', (280,200), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
         if(y < 40):
             print("\nmove front\n")
-        if(y > 250):
+            cv2.putText(frame, 'front', (280,200), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        if(y > 400):
             print("\nmove back\n")
+            cv2.putText(frame, 'back', (280,200), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
+        else:
+            print( '\n pause \n')
+            cv2.putText(frame, 'pause', (280, 200), font, 1, (255, 255, 255), 2, cv2.LINE_AA)
         for i in xrange (1,len(pts)):
             if pts[i-1] is None or pts[i] is None :
                 continue
             thickness = 2
             cv2.line(frame,pts[i-1],pts[i],(0,0,255),thickness)
-        res = cv2.bitwise_and(frame, frame, mask=mask)
-        cv2.imshow('frame', frame)
-        cv2.imshow('mask', mask)
-        cv2.imshow('res', res)
+        res = cv2.bitwise_and(frame , frame, mask=mask)
+    cv2.imshow('frame', frame)
+    cv2.imshow('mask', mask)
+    #   cv2.imshow('res', res)
+    tracking.write(frame)
 
-        # This displays the frame, mask
-        # and res which we created in 3 separate windows.
-        k = cv2.waitKey(5) & 0xFF
-        if k == 27:
-         break
+    # This displays the frame, mask
+    # and res which we created in 3 separate windows.
+    k = cv2.waitKey(5) & 0xFF
+    if k == 27:
+        break
 
 # Destroys all of the HighGUI windows.
 cv2.destroyAllWindows()
 
 # release the captured frame
 cap.release()
+tracking.release()

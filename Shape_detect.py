@@ -1,91 +1,50 @@
-#!/usr/bin/python
-import math
-import numpy as np
 import cv2
+import numpy as np
+import imutils
+from shapeDetector import ShapeDetector
+from colorLabeler import ColorLabeler
 
-#dictionary of all contours
-contours = {}
-#array of edges of polygon
-approx = []
-#scale of the text
-scale = 2
-#camera
-cap = cv2.VideoCapture(1)
-print("press q to exit")
 
-# Define the codec and create VideoWriter object
-fourcc = cv2.VideoWriter_fourcc(*'XVID')
-out = cv2.VideoWriter('output.avi',fourcc, 20.0, (640,480))
+image = cv2.imread('shapesPhoto.png')
+resized = imutils.resize(image, width=300)
+ratio = image.shape[0] / float(resized.shape[0])
 
-#calculate angle
-def angle(pt1,pt2,pt0):
-    dx1 = pt1[0][0] - pt0[0][0]
-    dy1 = pt1[0][1] - pt0[0][1]
-    dx2 = pt2[0][0] - pt0[0][0]
-    dy2 = pt2[0][1] - pt0[0][1]
-    return float((dx1*dx2 + dy1*dy2))/math.sqrt(float((dx1*dx1 + dy1*dy1))*(dx2*dx2 + dy2*dy2) + 1e-10)
+# blur the resized image slightly, then convert it to both
+# grayscale and the L*a*b* color spaces
+blurred = cv2.GaussianBlur(resized, (5, 5), 0)
+gray = cv2.cvtColor(blurred, cv2.COLOR_BGR2GRAY)
+lab = cv2.cvtColor(blurred, cv2.COLOR_BGR2LAB)
+thresh = cv2.threshold(gray, 60, 255, cv2.THRESH_BINARY)[1]
 
-while(cap.isOpened()):
-    #Capture frame-by-frame
-    ret, frame = cap.read()
-    if ret==True:
-        #grayscale
-        gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-        #Canny
-        canny = cv2.Canny(frame,80,240,3)
+# find contours in the thresholded image
+cnts = cv2.findContours(thresh.copy(), cv2.RETR_EXTERNAL,
+                        cv2.CHAIN_APPROX_SIMPLE)
+cnts = cnts[0] if imutils.is_cv2() else cnts[1]
 
-        #contours
-        canny2, contours, hierarchy = cv2.findContours(canny,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
-        for i in range(0,len(contours)):
-            #approximate the contour with accuracy proportional to
-            #the contour perimeter
-            approx = cv2.approxPolyDP(contours[i],cv2.arcLength(contours[i],True)*0.02,True)
+# initialize the shape detector and color labeler
+sh = ShapeDetector()
+cl = ColorLabeler()
+for c in cnts:
+    # compute the center of the contour
+    M = cv2.moments(c)
+    cX = int((M["m10"] / M["m00"]) * ratio)
+    cY = int((M["m01"] / M["m00"]) * ratio)
 
-            #Skip small or non-convex objects
-            if(abs(cv2.contourArea(contours[i]))<100 or not(cv2.isContourConvex(approx))):
-                continue
+    # detect the shape of the contour and label the color
+    shape = sh.detect(c)
+    color = cl.label(lab, c)
 
-            #triangle
-            if(len(approx) == 3):
-                x,y,w,h = cv2.boundingRect(contours[i])
-                cv2.putText(frame,'TRI',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
-            elif(len(approx)>=4 and len(approx)<=6):
-                #nb vertices of a polygonal curve
-                vtc = len(approx)
-                #get cos of all corners
-                cos = []
-                for j in range(2,vtc+1):
-                    cos.append(angle(approx[j%vtc],approx[j-2],approx[j-1]))
-                #sort ascending cos
-                cos.sort()
-                #get lowest and highest
-                mincos = cos[0]
-                maxcos = cos[-1]
+    # multiply the contour (x, y)-coordinates by the resize ratio,
+    # then draw the contours and the name of the shape and labeled
+    # color on the image
+    c = c.astype("float")
+    c *= ratio
+    c = c.astype("int")
+    text = "{} {}".format(color, shape)
+    cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
+    cv2.putText(image, text, (cX, cY),
+                cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
-                #Use the degrees obtained above and the number of vertices
-                #to determine the shape of the contour
-                x,y,w,h = cv2.boundingRect(contours[i])
-                if(vtc==4):
-                    cv2.putText(frame,'RECT',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
-                elif(vtc==5):
-                    cv2.putText(frame,'PENTA',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
-                elif(vtc==6):
-                    cv2.putText(frame,'HEXA',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
-            else:
-                #detect and label circle
-                area = cv2.contourArea(contours[i])
-                x,y,w,h = cv2.boundingRect(contours[i])
-                radius = w/2
-                if(abs(1 - (float(w)/h))<=2 and abs(1-(area/(math.pi*radius*radius)))<=0.2):
-                    cv2.putText(frame,'CIRC',(x,y),cv2.FONT_HERSHEY_SIMPLEX,scale,(255,255,255),2,cv2.LINE_AA)
-
-        #Display the resulting frame
-        out.write(frame)
-        cv2.imshow('frame',frame)
-        cv2.imshow('canny',canny)
-        if cv2.waitKey(1) == 1048689: #if q is pressed
-            break
-
-#When everything done, release the capture
-cap.release()
-cv2.destroyAllWindows()
+    # show the output image
+    cv2.imshow("Image", image)
+    cv2.waitKey(0)

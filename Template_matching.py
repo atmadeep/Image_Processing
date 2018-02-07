@@ -1,38 +1,95 @@
 import cv2
-#import numpy as np
-from matplotlib import pyplot as plt
+import numpy as np
+import imutils
 
-img = cv2.imread('redbox.jpeg',0)
-img2 = img.copy()
-template = cv2.imread('box.jpeg',0)
-w, h = template.shape[::-1]
+def shape_detect(c):
+    shape="unidentified"
+    perimeter = cv2.arcLength(c,True)
+    approx = cv2.approxPolyDP(c,0.04*perimeter,True,approxCurve=None)
 
-# All the 6 methods for comparison in a list
-methods = ['cv2.TM_CCOEFF', 'cv2.TM_CCOEFF_NORMED', 'cv2.TM_CCORR',
-            'cv2.TM_CCORR_NORMED', 'cv2.TM_SQDIFF', 'cv2.TM_SQDIFF_NORMED']
-instruction_photos = ["fornt.png","right.png","left.png","back.png","stop.png"]
-dir_photos = ["fornt.png","right.png","left.png","right.png","fornt.png","right.png","right.png","fornt.png","right.png","back.png","right.png","fornt.png","stop.png"]
-for current in dir_photos:
-    img = img2.copy()
-    method = eval('cv2.TM_SQDIFF_NORMED')
+    if len(approx)==3:
+        shape="triangle"
 
-    # Apply template Matching
-    res = cv2.matchTemplate(img,template,method)
-    min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+    elif len(approx)==4:
+        (x,y,w,h) = cv2.boundingRect(approx)
+        ar = w/float(h)
+        shape = "square" if ar > .95 and ar < 1.05 else "rectangle"
 
-    # If the method is TM_SQDIFF or TM_SQDIFF_NORMED, take minimum
-    if method in [cv2.TM_SQDIFF, cv2.TM_SQDIFF_NORMED]:
-        top_left = min_loc
+    elif len(approx)==5:
+        shape="pentagon"
+
+    elif len(approx) == 6:
+        shape="hexagon"
+
     else:
-        top_left = max_loc
-    bottom_right = (top_left[0] + w, top_left[1] + h)
+        shape = "circle"
 
-    cv2.rectangle(img,top_left, bottom_right, 255, 2)
+    return shape,approx
 
-    plt.subplot(121),plt.imshow(res,cmap = 'gray')
-    plt.title('Matching Result'), plt.xticks([]), plt.yticks([])
-    plt.subplot(122),plt.imshow(img,cmap = 'gray')
-    plt.title('Detected Point'), plt.xticks([]), plt.yticks([])
-    plt.suptitle(method)
+cap = cv2.VideoCapture(0)
+min_area = 0
+max_area = 100000
+while True:
+    ret,image  = cap.read()
+    #image = cv2.imread('left_instruction.jpg')
+    ratio = image.shape[0]/300.0
+    gray = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
-    plt.show()
+    blur = cv2.GaussianBlur(gray,(3,3),0)
+    thresh = cv2.threshold(blur,100,255,cv2.THRESH_OTSU + cv2.THRESH_BINARY)[1]
+    canny  = cv2.Canny(thresh,100,255,)
+    rectangles = []
+    frame,cnts,hierarchy = cv2.findContours(canny.copy(),cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    cnts = sorted(cnts,key=cv2.contourArea,reverse=True)
+    cv2.drawContours(image,cnts,0,(0,255,200),2)
+
+    for c in cnts:
+        shape,rectangle = shape_detect(c)
+        area = cv2.contourArea(rectangle)
+        if(shape=='rectangle' ):
+            sign = rectangle
+
+
+
+
+
+
+    pts = sign.reshape(4,2)
+    rect = np.zeros((4,2),dtype="float32")
+    s= pts.sum(axis=1)
+    rect[0]=pts[np.argmin(s)]
+    rect[2]=pts[np.argmax(s)]
+    diff = np.diff(pts,axis=1)
+    rect[1]=pts[np.argmin(diff)]
+    rect[3]=pts[np.argmax(diff)]
+
+    rect*=ratio
+
+    (tl, tr, br, bl) = rect
+    widthA = np.sqrt(((br[0]-bl[0])**2)+((br[1]-bl[1])**2))
+    widthB = np.sqrt(((tr[0]-tl[0])**2)+((tr[1]-tl[1])**2))
+
+    heightA = np.sqrt(((tr[0]-br[0])**2)+((tr[1]-br[1])**2))
+    heightB = np.sqrt(((tl[0]-bl[0])**2)+((tl[1]-bl[1])**2))
+
+    maxwidth = max(int(widthA),int(widthB))
+    maxheight = max(int(heightA),int(heightB))
+
+    dst = np.array([
+            [0,0],
+                [maxwidth-1, 0],
+                [maxwidth-1,maxheight-1],
+                [0,maxheight-1]],dtype="float32")
+    Perspective=cv2.getPerspectiveTransform(rect,dst)
+    warp = cv2.warpPerspective(image.copy(),Perspective,(maxwidth,maxheight))
+    warp = cv2.cvtColor(warp,cv2.COLOR_BGR2GRAY)
+    cv2.imshow('warp',warp)
+    cv2.imshow('image',image)
+    cv2.imshow('canny',canny)
+    k=cv2.waitKey(30) & 0xFF
+    if k == 27:
+        break
+
+print("good run.")
+cap.release()
+cv2.destroyAllWindows()
