@@ -27,7 +27,7 @@ if ret==True:
     print(imgpoints)
     cv2.drawChessboardCorners(img,(9,7),corners,ret)
     cv2.imshow('img',img)
-    cv2.waitKey()
+    cv2.waitKey(500)
 
 print('\nobject and image points\n')
 

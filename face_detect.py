@@ -29,6 +29,7 @@ while(True) :
         eyes=eye.detectMultiScale(roi_gray)
         for (ex,ey,ew,eh) in eyes :
             cv2.rectangle(roi_color,(ex,ey), (ex+ew,ey+eh), (0,255,0),2)
+        
 
     cv2.imshow('primary',image)
     k=cv2.waitKey(30) & 0xFF
