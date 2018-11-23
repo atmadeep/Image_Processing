@@ -32,11 +32,11 @@ while(True):
         cv2.imshow('Image',img)
         cv2.imshow('Image1',mask)
         cv2.imshow('Image2',frame)
-        k=cv2.waitKey(30) & 0xff
-        if k==27:
-            break
-        old_gray=frame_gray.copy()
-        p0=good_new.reshape(-1,1,2)
+    k=cv2.waitKey(30) & 0xff
+    if k==27:
+        break
+    old_gray=frame_gray.copy()
+    p0=good_new.reshape(-1,1,2)
 
 cv2.destroyAllWindows()
 cap.release()

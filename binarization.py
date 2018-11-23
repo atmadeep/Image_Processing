@@ -1,7 +1,8 @@
 import cv2
-import numpy as np
+from os import path
 from matplotlib import pyplot as plt
-img = cv2.imread('noisy_3.jpeg',0)
+image_path=path.join('other_images','noisy_3.jpeg')
+img = cv2.imread(image_path,0)
 # global thresholding
 ret1,th1 = cv2.threshold(img,127,255,cv2.THRESH_BINARY)
 # Otsu's thresholding

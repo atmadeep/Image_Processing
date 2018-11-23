@@ -1,7 +1,7 @@
 import cv2
 
 
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3,640.0)
 cap.set(4,480.0)
 cap.set(5,15)
@@ -29,7 +29,7 @@ while cv2.waitKey(1)!= 27:
             cy = int(M['m01']/M['m00'])
             if(cx <= 280):
                 l = (cx*100/160)
-                print("\nturn lefut\n")
+                print("\nturn left\n")
                 cv2.putText(frame,'LEFT',(300,220),font,1,(0,0,255),2,cv2.LINE_AA)
 
             elif(cx >= 360):

@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 cap = cv2.VideoCapture(0)
 while(True):
-    ret,frame = cap.read()
+    _,frame=cap.read()
     #converting to HSV values
     hsv=cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
     lower_range = np.array([110,50,50])

@@ -4,32 +4,603 @@
     <bookmark url="file://$PROJECT_DIR$/visual_instructions.py" line="7" mnemonic="8" />
     <bookmark url="file://$PROJECT_DIR$/visual_instructions.py" line="12" />
   </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="Image_Processing" targetName="3d_Disparity" />
+      <config projectName="Image_Processing" targetName="First_program" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="6d3c57dd-d31c-491f-b3a6-88367e5ea20e" name="Default" comment="Tracks an object and moves the bot in required direction.">
-      <change beforePath="" afterPath="$PROJECT_DIR$/3D_disparity.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/binarization.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/distance_triangle.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/line_following.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/visual_instructions.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Shape_detect.py" afterPath="$PROJECT_DIR$/Shape_detect.py" />
-      <change beforePath="$PROJECT_DIR$/Template_matching.py" afterPath="$PROJECT_DIR$/Template_matching.py" />
-      <change beforePath="$PROJECT_DIR$/Track_object.py" afterPath="$PROJECT_DIR$/Track_object.py" />
-      <change beforePath="$PROJECT_DIR$/aloo_sona.mp4" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/box.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/car1.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/car2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/car3.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/car4.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/face_detect.py" afterPath="$PROJECT_DIR$/face_detect.py" />
-      <change beforePath="$PROJECT_DIR$/grill.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/histograms.py" afterPath="$PROJECT_DIR$/histograms.py" />
-      <change beforePath="$PROJECT_DIR$/main.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/redbox.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test1.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/test2.jpeg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/trial.py" afterPath="$PROJECT_DIR$/trial.py" />
-      <change beforePath="$PROJECT_DIR$/�.jpg" afterPath="" />
+      <change afterPath="$PROJECT_DIR$/Tracking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/background_subtraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/11.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/12.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/21.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/22.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/31.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/32.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/41.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/42.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/51.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/52.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/61.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pot_holes_hist/62.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/video.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/trials.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/trials.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.lck" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.script" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/3d_Disparity.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Edge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Edge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/First_program.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_eye.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_eye.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_eye_tree_eyeglasses.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalcatface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalcatface_extended.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalface_alt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalface_alt2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalface_alt_tree.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_frontalface_default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/haarcascade_frontalface_default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_fullbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_lefteye_2splits.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_licence_plate_rus_16stages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_lowerbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_profileface.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_righteye_2splits.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_russian_plate_number.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_smile.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Haar_Cascades/haarcascade_upperbody.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HelloWorld.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LK_optical_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/LK_optical_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shape_Algo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/StereoTuner.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/Track_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/Track_object.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/Track_object" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-Analysis.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-COLLECT.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-EXE.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-PKG.pkg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-PKG.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-PYZ.pyz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/out00-PYZ.toc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/warnTrack_object.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/build/Track_object/xref-Track_object.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/Track_object" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_bz2.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_cn.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_hk.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_iso2022.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_jp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_kr.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_codecs_tw.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_ctypes.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_curses.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_decimal.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_hashlib.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_lzma.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_multibytecodec.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_multiprocessing.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_opcode.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/_ssl.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/cv2.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/include/python3.6m/pyconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/lib2to3/Grammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/lib2to3/PatternGrammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libQt5Core.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libQt5Gui.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libQt5OpenGL.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libQt5Test.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libQt5Widgets.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libX11-xcb.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libX11.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXau.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXdamage.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXdmcp.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXext.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXfixes.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXrender.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libXxf86vm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libaec.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libavcodec.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libavformat.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libavutil.so.55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libbluray.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libbsd.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libbz2.so.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libcairo.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libchromaprint.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libcom_err.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libcrypto.so.1.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libcrystalhd.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libdc1394.so.22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libdouble-conversion.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libdrm.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libexif.so.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libexpat.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libffi.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libfontconfig.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libfreetype.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgcc_s.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgcrypt.so.20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgflags.so.2.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgfortran-ed201abd.so.3.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libglapi.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libglib-2.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libglog.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgme.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgmp.so.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgnutls.so.30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgomp.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgpg-error.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgphoto2.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgphoto2_port.so.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgraphite2.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgsm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libgssapi_krb5.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libharfbuzz.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libhdf5_serial.so.100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libhogweed.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libicudata.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libicui18n.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libicuuc.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libidn.so.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libjpeg.so.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libk5crypto.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libkeyutils.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libkrb5.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libkrb5support.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libltdl.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/liblzma.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libmp3lame.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libmpdec.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libmpg123.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libncursesw.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libnettle.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libnuma.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libogg.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopenblasp-r0-39a31c03.2.18.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_aruco.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_bgsegm.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_bioinspired.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_calib3d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_ccalib.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_core.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_dnn.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_face.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_features2d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_flann.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_freetype.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_fuzzy.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_hdf.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_highgui.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_img_hash.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_imgcodecs.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_imgproc.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_ml.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_objdetect.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_optflow.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_phase_unwrapping.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_photo.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_plot.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_reg.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_rgbd.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_saliency.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_sfm.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_shape.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_stitching.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_structured_light.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_surface_matching.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_text.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_tracking.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_video.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_videoio.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_xfeatures2d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_ximgproc.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopencv_xphoto.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopenjp2.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopenmpt.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libopus.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libp11-kit.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libpcre.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libpixman-1.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libpng16.so.16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libpython3.6m.so.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libraw1394.so.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libreadline.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libshine.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libsnappy.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libsoxr.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libspeex.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libssh-gcrypt.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libssl.so.1.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libstdc++.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libswresample.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libswscale.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libsz.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtasn1.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtbb.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtheoradec.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtheoraenc.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtinfo.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libtwolame.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libudev.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libunwind.so.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libusb-1.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libva-drm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libva-x11.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libva.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libvdpau.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libvorbis.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libvorbisenc.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libvorbisfile.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libvpx.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libwavpack.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libwebp.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libwebpmux.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libx264.so.148" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libx265.so.130" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxcb-glx.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxcb-present.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxcb-render.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxcb-shm.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxcb-sync.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxml2.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxshmfence.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libxvidcore.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libz.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/libzvbi.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/mmap.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.core.multiarray.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.core.umath.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.fft.fftpack_lite.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.linalg._umath_linalg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.linalg.lapack_lite.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/numpy.random.mtrand.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/readline.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/resource.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Track_object/dist/Track_object/termios.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ball_tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/ball_tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/binarization.py" beforeDir="false" afterPath="$PROJECT_DIR$/binarization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blue_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/blue_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/3D_disparity.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/Face0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/Face1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/Face2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/camera_caliberation.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/capture_images.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_left9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cameracaliberation/image_right9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/3d_Disparity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeCXXCompiler.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CMakeSystem.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdC/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.10.3/CompilerIdCXX/a.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/3d_Disparity.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3d_Disparity.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/First_program.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/cmake.check_cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Image_Processing.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/distance_triangle.py" beforeDir="false" afterPath="$PROJECT_DIR$/distance_triangle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_bz2.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_cn.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_hk.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_iso2022.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_jp.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_kr.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_codecs_tw.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_ctypes.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_curses.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_decimal.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_hashlib.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_lzma.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_multibytecodec.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_multiprocessing.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_opcode.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/_ssl.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/base_library.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/cv2.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/face_detect" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/include/python3.6m/pyconfig.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/lib/python3.6/config-3.6m-x86_64-linux-gnu/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/lib2to3/Grammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/lib2to3/PatternGrammar.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libQt5Core.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libQt5Gui.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libQt5OpenGL.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libQt5Test.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libQt5Widgets.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libX11-xcb.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libX11.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXau.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXdamage.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXdmcp.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXext.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXfixes.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXrender.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libXxf86vm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libaec.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libavcodec.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libavformat.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libavutil.so.55" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libbluray.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libbsd.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libbz2.so.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libcairo.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libchromaprint.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libcom_err.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libcrypto.so.1.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libcrystalhd.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libdc1394.so.22" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libdouble-conversion.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libdrm.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libexif.so.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libexpat.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libffi.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libfontconfig.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libfreetype.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgcc_s.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgcrypt.so.20" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgflags.so.2.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgfortran-ed201abd.so.3.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libglapi.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libglib-2.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libglog.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgme.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgmp.so.10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgnutls.so.30" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgomp.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgpg-error.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgphoto2.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgphoto2_port.so.12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgraphite2.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgsm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libgssapi_krb5.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libharfbuzz.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libhdf5_serial.so.100" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libhogweed.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libicudata.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libicui18n.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libicuuc.so.57" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libidn.so.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libjpeg.so.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libk5crypto.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libkeyutils.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libkrb5.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libkrb5support.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libltdl.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/liblzma.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libmp3lame.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libmpdec.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libmpg123.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libncursesw.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libnettle.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libnuma.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libogg.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopenblasp-r0-39a31c03.2.18.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_aruco.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_bgsegm.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_bioinspired.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_calib3d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_ccalib.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_core.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_dnn.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_face.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_features2d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_flann.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_freetype.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_fuzzy.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_hdf.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_highgui.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_img_hash.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_imgcodecs.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_imgproc.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_ml.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_objdetect.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_optflow.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_phase_unwrapping.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_photo.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_plot.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_reg.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_rgbd.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_saliency.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_sfm.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_shape.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_stitching.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_structured_light.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_surface_matching.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_text.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_tracking.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_video.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_videoio.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_xfeatures2d.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_ximgproc.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopencv_xphoto.so.3.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopenjp2.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopenmpt.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libopus.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libp11-kit.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libpcre.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libpixman-1.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libpng16.so.16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libpython3.6m.so.1.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libraw1394.so.11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libreadline.so.7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libshine.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libsnappy.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libsoxr.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libspeex.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libssh-gcrypt.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libssl.so.1.0.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libstdc++.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libswresample.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libswscale.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libsz.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtasn1.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtbb.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtheoradec.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtheoraenc.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtinfo.so.5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libtwolame.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libudev.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libunwind.so.8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libusb-1.0.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libva-drm.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libva-x11.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libva.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libvdpau.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libvorbis.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libvorbisenc.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libvorbisfile.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libvpx.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libwavpack.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libwebp.so.6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libwebpmux.so.3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libx264.so.148" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libx265.so.130" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxcb-glx.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxcb-present.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxcb-render.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxcb-shm.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxcb-sync.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxml2.so.2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxshmfence.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libxvidcore.so.4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libz.so.1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/libzvbi.so.0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/mmap.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.core.multiarray.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.core.umath.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.fft.fftpack_lite.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.linalg._umath_linalg.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.linalg.lapack_lite.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/numpy.random.mtrand.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/readline.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/resource.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/dist/face_detect/termios.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face/face_detect.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/face_detect.py" beforeDir="false" afterPath="$PROJECT_DIR$/face_detect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/histograms.py" beforeDir="false" afterPath="$PROJECT_DIR$/histograms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image_processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/line_following.py" beforeDir="false" afterPath="$PROJECT_DIR$/line_following.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mymath.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stereo_match.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial.spec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trial2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/video_1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/circle.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/video_left.avi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/videos/video_right.avi" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -86,11 +657,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="3D_disparity.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3D_disparity.py">
+      <file leaf-file-name="MeanShift.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MeanShift.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+            <state relative-caret-position="312">
+              <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -98,26 +669,89 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DSC00033.JPG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSC00033.JPG">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DSC00036.JPG" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/DSC00036.JPG">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="binarization.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/binarization.py">
+      <file leaf-file-name="Shape_detect.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Shape_detect.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-              <folding />
+            <state>
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shapeDetector.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shapeDetector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-185" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tracking.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tracking.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1680">
+              <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="video.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/video.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Template_matching.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Template_matching.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1128">
+              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Track_object.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Track_object.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Image_write.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Image_write.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="line_following.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/line_following.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LK_optical_flow.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LK_optical_flow.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -127,6 +761,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CMakeLists.txt" />
         <option value="Python Script" />
       </list>
     </option>
@@ -155,28 +790,46 @@
         <option value="$PROJECT_DIR$/input.txt" />
         <option value="$PROJECT_DIR$/HelloWorld.py" />
         <option value="$PROJECT_DIR$/mymath.py" />
-        <option value="$PROJECT_DIR$/Edge.py" />
-        <option value="$PROJECT_DIR$/ball_tracker.py" />
         <option value="$PROJECT_DIR$/Image_write.py" />
         <option value="$PROJECT_DIR$/MeanShift.py" />
-        <option value="$PROJECT_DIR$/image_processing.py" />
         <option value="$PROJECT_DIR$/Dense_optical_flow.py" />
-        <option value="$PROJECT_DIR$/LK_optical_flow.py" />
-        <option value="$PROJECT_DIR$/Shape_Algo.py" />
-        <option value="$PROJECT_DIR$/blue_detect.py" />
-        <option value="$PROJECT_DIR$/face_detect.py" />
         <option value="$PROJECT_DIR$/Shape_detect.py" />
-        <option value="$PROJECT_DIR$/distance_triangle.py" />
         <option value="$PROJECT_DIR$/Template_matching.py" />
-        <option value="$PROJECT_DIR$/line_following.py" />
-        <option value="$PROJECT_DIR$/Track_object.py" />
-        <option value="$PROJECT_DIR$/visual_instructions.py" />
-        <option value="$PROJECT_DIR$/trial.py" />
-        <option value="$PROJECT_DIR$/binarization.py" />
-        <option value="$PROJECT_DIR$/histograms.py" />
+        <option value="$PROJECT_DIR$/First_program.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/3d_Disparity.cpp" />
         <option value="$PROJECT_DIR$/3D_disparity.py" />
+        <option value="$PROJECT_DIR$/capture_images.py" />
+        <option value="$PROJECT_DIR$/cameracaliberation/camera_caliberation.py" />
+        <option value="$PROJECT_DIR$/cameracaliberation/3D_disparity.py" />
+        <option value="$PROJECT_DIR$/cameracaliberation/capture_images.py" />
+        <option value="$PROJECT_DIR$/binarization.py" />
+        <option value="$PROJECT_DIR$/Shape_Algo.py" />
+        <option value="$PROJECT_DIR$/line_following.py" />
+        <option value="$PROJECT_DIR$/LK_optical_flow.py" />
+        <option value="$PROJECT_DIR$/background_subtraction_MOG.py" />
+        <option value="$PROJECT_DIR$/background_subtraction.py" />
+        <option value="$PROJECT_DIR$/image_processing.py" />
+        <option value="$PROJECT_DIR$/Tracking.py" />
+        <option value="$PROJECT_DIR$/video_1.py" />
+        <option value="$PROJECT_DIR$/histograms.py" />
+        <option value="$PROJECT_DIR$/face_detect.py" />
+        <option value="$PROJECT_DIR$/blue_detect.py" />
+        <option value="$PROJECT_DIR$/Edge.py" />
+        <option value="$PROJECT_DIR$/Track_object.py" />
+        <option value="$PROJECT_DIR$/distance_triangle.py" />
+        <option value="$PROJECT_DIR$/trial2.py" />
+        <option value="$PROJECT_DIR$/image_1.py" />
+        <option value="$PROJECT_DIR$/trial.py" />
+        <option value="$PROJECT_DIR$/visual_instructions.py" />
+        <option value="$PROJECT_DIR$/ball_tracker.py" />
       </list>
     </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="trials/invalid/Python facet" />
+    </ignored-facets>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -184,30 +837,23 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1058" />
-    <option name="y" value="90" />
-    <option name="width" value="910" />
-    <option name="height" value="905" />
+    <option name="width" value="1922" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
+    <navigator proportions="" version="1">
       <sortByType ProjectPane="true" />
-      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,15 +865,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="im&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/image_1.py&#10;trial&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/trial2.py&#10;dis&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/distance_triangle.py&#10;edge&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/Edge.py&#10;blue&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/blue_detect.py&#10;dista&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/distance_triangle.py&#10;face&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/face_detect.py&#10;vide&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/video_1.py&#10;tra&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/Tracking.py&#10;TRIAL&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/trial.py&#10;TRI&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/ball_tracker.py&#10;trac&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/Tracking.py&#10;his&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/histograms.py&#10;track&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/Tracking.py&#10;trackin&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/Tracking.py&#10;dete&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/blue_detect.py&#10;ball&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/ball_tracker.py&#10;distan&#9;FILE&#9;file:///home/atmadeep/CLionProjects/Image_Processing/distance_triangle.py&#10;tri&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/trial.py&#10;tem&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Template_matching.py&#10;SHAPE&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Shape_detect.py&#10;hist&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/histograms.py&#10;te&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Template_matching.py&#10;shape&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Shape_detect.py&#10;blu&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/trials/blue_detect.py" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Shape_Algo.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="tri&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/trial.py&#10;track&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Track_object.py&#10;tem&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Template_matching.py&#10;SHAPE&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Shape_detect.py&#10;hist&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/histograms.py&#10;te&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Template_matching.py&#10;blue&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/blue_detect.py&#10;face&#9;FILE&#9;file:///home/atmadeep/.PyCharm2017.3/system/python_stubs/-1247972723/cv2/face_BasicFaceRecognizer.py&#10;shape&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/Image_Processing/Shape_detect.py&#10;blu&#9;FILE&#9;file:///home/atmadeep/PycharmProjects/trials/blue_detect.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -249,27 +893,69 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.3D_disparity">
+  <component name="RunManager" selected="Python.trial">
+    <configuration name="3d_Disparity" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Image_Processing" TARGET_NAME="3d_Disparity" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Image_Processing" RUN_TARGET_NAME="3d_Disparity" />
+    <configuration name="3d_Disparity_CPP" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Image_Processing" TARGET_NAME="3d_Disparity" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Image_Processing" RUN_TARGET_NAME="3d_Disparity" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Image_Processing" RUN_TARGET_NAME="3d_Disparity" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="First_Program" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="image.jpeg" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Image_Processing" TARGET_NAME="First_program" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Image_Processing" RUN_TARGET_NAME="First_program" />
+    <configuration name="First_program" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Image_Processing" TARGET_NAME="First_program" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Image_Processing" RUN_TARGET_NAME="First_program" />
     <configuration name="3D_disparity" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cameracaliberation" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="trials" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3D_disparity.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cameracaliberation/3D_disparity.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="DenseOpticalFlow" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Dense_optical_flow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="DistanceTriangulation" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/distance_triangle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="EdgeDetection" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -280,15 +966,122 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="trials" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HelloWorld.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Edge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="binarization" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LK_optical_flow" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LK_optical_flow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="MeanShift" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MeanShift.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Template_matching" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Template_matching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Track_object" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Track_object.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Tracking" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tracking.py" />
+      <option name="PARAMETERS" value="5" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="background_subtraction_MOG" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/background_subtraction.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="ball_tracker" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -296,10 +1089,27 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ball_tracker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="binarization" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binarization.py" />
       <option name="PARAMETERS" value="" />
@@ -307,7 +1117,62 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="blue_detect" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/blue_detect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="capture_images" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/cameracaliberation" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cameracaliberation/capture_images.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="face_detect" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/face_detect.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="histograms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -315,10 +1180,9 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="trials" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/histograms.py" />
       <option name="PARAMETERS" value="" />
@@ -326,7 +1190,81 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="image_1" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.6" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="image_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image_processing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="line_following" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/line_following.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="trial" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="trials" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/image.py" />
+      <option name="PARAMETERS" value="Atmadeep is awesome" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="trial2" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -334,56 +1272,72 @@
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="trials" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/trial2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="visual_instructions" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="video_1" type="PythonConfigurationType" factoryName="Python">
+      <module name="trials" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="trials" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visual_instructions.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/video.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Python.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Python.visual_instructions" />
-      <item index="2" class="java.lang.String" itemvalue="Python.trial" />
-      <item index="3" class="java.lang.String" itemvalue="Python.histograms" />
-      <item index="4" class="java.lang.String" itemvalue="Python.binarization" />
-      <item index="5" class="java.lang.String" itemvalue="Python.3D_disparity" />
+    <list>
+      <item itemvalue="Application.First_Program" />
+      <item itemvalue="Application.3d_Disparity" />
+      <item itemvalue="Application.First_program" />
+      <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.3d_Disparity_CPP" />
+      <item itemvalue="Python.trial2" />
+      <item itemvalue="Python.image_1" />
+      <item itemvalue="Python.video_1" />
+      <item itemvalue="Python.face_detect" />
+      <item itemvalue="Python.Tracking" />
+      <item itemvalue="Python.capture_images" />
+      <item itemvalue="Python.ball_tracker" />
+      <item itemvalue="Python.DenseOpticalFlow" />
+      <item itemvalue="Python.DistanceTriangulation" />
+      <item itemvalue="Python.EdgeDetection" />
+      <item itemvalue="Python.blue_detect" />
+      <item itemvalue="Python.Track_object" />
+      <item itemvalue="Python.line_following" />
+      <item itemvalue="Python.LK_optical_flow" />
+      <item itemvalue="Python.Template_matching" />
+      <item itemvalue="Python.MeanShift" />
+      <item itemvalue="Python.background_subtraction_MOG" />
+      <item itemvalue="Python.trial" />
+      <item itemvalue="Python.histograms" />
+      <item itemvalue="Python.binarization" />
+      <item itemvalue="Python.3D_disparity" />
+      <item itemvalue="Python.image_processing" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.3D_disparity" />
-        <item index="1" class="java.lang.String" itemvalue="Python.histograms" />
-        <item index="2" class="java.lang.String" itemvalue="Python.binarization" />
-        <item index="3" class="java.lang.String" itemvalue="Python.trial" />
-        <item index="4" class="java.lang.String" itemvalue="Python.visual_instructions" />
+      <list>
+        <item itemvalue="Python.trial" />
+        <item itemvalue="Python.histograms" />
+        <item itemvalue="Python.image_processing" />
+        <item itemvalue="Python.binarization" />
+        <item itemvalue="Python.3D_disparity" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -395,6 +1349,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505891285705</updated>
+      <workItem from="1532587652556" duration="637000" />
+      <workItem from="1533806829906" duration="910000" />
+      <workItem from="1533831537269" duration="1000" />
+      <workItem from="1534001492686" duration="717000" />
+      <workItem from="1534002241323" duration="841000" />
+      <workItem from="1534172491752" duration="94000" />
+      <workItem from="1534312839031" duration="1779000" />
+      <workItem from="1534314652924" duration="3607000" />
+      <workItem from="1534361859707" duration="2760000" />
+      <workItem from="1534521260556" duration="9000" />
+      <workItem from="1534698000224" duration="6382000" />
+      <workItem from="1534858099923" duration="41000" />
+      <workItem from="1535353413639" duration="5598000" />
+      <workItem from="1535741997037" duration="13000" />
+      <workItem from="1537292921640" duration="28000" />
+      <workItem from="1537292965083" duration="1166000" />
+      <workItem from="1537806263798" duration="587000" />
+      <workItem from="1538380232408" duration="660000" />
+      <workItem from="1538558306099" duration="18000" />
+      <workItem from="1540199315910" duration="12858000" />
+      <workItem from="1540217072318" duration="257000" />
+      <workItem from="1540217701722" duration="601000" />
+      <workItem from="1540492311590" duration="2030000" />
+      <workItem from="1540564142714" duration="2000" />
+      <workItem from="1542954024356" duration="3356000" />
+      <workItem from="1542990868447" duration="6813000" />
+      <workItem from="1543079627536" duration="803000" />
+      <workItem from="1543343156015" duration="9000" />
+      <workItem from="1543380213827" duration="523000" />
+      <workItem from="1543582235516" duration="19000" />
+      <workItem from="1543680815222" duration="670000" />
+      <workItem from="1543739109153" duration="16000" />
+      <workItem from="1543930671858" duration="4835000" />
+      <workItem from="1544163459544" duration="26126000" />
+      <workItem from="1544268750843" duration="1733000" />
+      <workItem from="1544330464142" duration="11618000" />
+      <workItem from="1544438509843" duration="9000" />
+      <workItem from="1544617644313" duration="36765000" />
     </task>
     <task id="LOCAL-00001" summary="Initail commit in Image processing project. Currently an intern at avian aerospace bangalore.">
       <created>1514365465972</created>
@@ -420,6 +1412,9 @@
     <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="134891000" />
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -430,55 +1425,58 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1058" y="90" width="1920" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-3" y="-1" width="1926" height="1058" extended-state="6" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46698874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.51077586" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="27" y="468" width="1866" height="167" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4160998" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53502154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.94181037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36374134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="430" height="854" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24439701" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32993197" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50208336" side_tool="true" weight="0.6694648" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32993197" />
+      <window_info anchor="right" x="27" y="468" width="1866" height="167" id="Run" order="7" weight="0.38260406" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29157668" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39848813" />
+      <window_info anchor="bottom" id="CMake" order="6" sideWeight="0.49947917" weight="0.32912722" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.46698874" />
+      <window_info anchor="right" x="0" y="0" width="430" height="854" id="Documentation" order="3" weight="0.36374134" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49791667" weight="0.6694648" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.94181037" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36374134" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="430" height="854" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46698874" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6217672" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" x="27" y="468" width="1866" height="167" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4160998" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.53579676" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3995657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" x="27" y="468" width="1866" height="167" id="Run" order="7" visible="true" weight="0.38260406" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24439701" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="5" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="right" id="Data View" order="4" />
+      <window_info anchor="bottom" id="Python Console" order="9" weight="0.46698874" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39848813" />
+      <window_info anchor="right" x="0" y="0" width="430" height="854" id="Documentation" order="3" weight="0.36374134" />
+      <window_info anchor="right" id="Database" order="5" weight="0.3297414" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49791667" weight="0.6694648" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.29157668" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50208336" side_tool="true" weight="0.6694648" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32993197" />
+      <window_info anchor="right" id="SciView" order="6" weight="0.94181037" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="CMake" order="6" sideWeight="0.49947917" weight="0.32912722" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -495,303 +1493,308 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/input.txt">
+    <entry file="file://$PROJECT_DIR$/DSC00033.JPG" />
+    <entry file="file://$PROJECT_DIR$/DSC00036.JPG" />
+    <entry file="file://$PROJECT_DIR$/frameRight4.png" />
+    <entry file="file://$USER_HOME$/opencv/modules/highgui/src/window.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="195">
+          <caret line="363" selection-start-line="363" selection-end-line="363" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/trial.spec">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mymath.py">
+    <entry file="file://$PROJECT_DIR$/3d_Disparity.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input.txt">
+    <entry file="file://$PROJECT_DIR$/3D_disparity.py" />
+    <entry file="file://$PROJECT_DIR$/capture_images.py" />
+    <entry file="file://$PROJECT_DIR$/cameracaliberation/image0.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/First_program.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="34" lean-forward="false" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        <state relative-caret-position="216">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/cameracaliberation/capture_images.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="96">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/cameracaliberation/3D_disparity.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1008">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="37" selection-end-line="44" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/deep.jpg" />
+    <entry file="file://$PROJECT_DIR$/cameracaliberation/camera_caliberation.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="576">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/other_images/image_5.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_images/image_2.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_images/image_1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_images/contour2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_images/contour1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/other_images/shapesPhoto.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/.CLion2018.1/system/python_stubs/-1247972723/cv2/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="237">
+          <caret line="7257" column="4" selection-start-line="7257" selection-start-column="4" selection-end-line="7257" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+    <entry file="file://$PROJECT_DIR$/background_subtraction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mymath/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shapesPhoto.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="20" column="23" lean-forward="false" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mymath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="432">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Edge.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ball_tracker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/image_processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Image_write.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dense_optical_flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/car4.jpeg" />
-    <entry file="file://$PROJECT_DIR$/car3.jpeg" />
-    <entry file="file://$PROJECT_DIR$/car2.jpeg" />
-    <entry file="file://$PROJECT_DIR$/car1.jpeg" />
-    <entry file="file://$PROJECT_DIR$/main.jpg" />
-    <entry file="file://$PROJECT_DIR$/temp.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MeanShift.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grill.jpeg" />
-    <entry file="file://$USER_HOME$/.PyCharm2017.3/system/python_stubs/-1247972723/cv2/face_BasicFaceRecognizer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="97" column="11" lean-forward="true" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/haarcascade_eye.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LK_optical_flow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" column="24" lean-forward="false" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blue_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shape_Algo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/face_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/line_following.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Template_matching.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="12" column="77" lean-forward="false" selection-start-line="12" selection-start-column="77" selection-end-line="12" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Readme">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Shape_detect.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-818">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/distance_triangle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="40" column="1" lean-forward="false" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visual_instructions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        <state relative-caret-position="432">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/histograms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="72">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Track_object.py">
+    <entry file="file://$PROJECT_DIR$/face_detect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="768">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trial2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visual_instructions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="e#89#99#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ball_tracker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/binarization.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="3" column="31" lean-forward="false" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="216">
+          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/right.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/right.jpg" />
-    <entry file="file://$PROJECT_DIR$/left.jpg" />
-    <entry file="file://$PROJECT_DIR$/DSC00033.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DSC00036.JPG">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b572db30-9beb-43e6-afc7-20dcfa5efc40/console.sql">
+    <entry file="file://$PROJECT_DIR$/blue_detect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="240">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3D_disparity.py">
+    <entry file="file://$PROJECT_DIR$/colorLabeler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        <state relative-caret-position="-497" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dense_optical_flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HelloWorld.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distance_triangle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Image_write.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/line_following.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LK_optical_flow.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mymath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MeanShift.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Shape_detect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stereo_match.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/StereoTuner.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shapeDetector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-185" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Template_matching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Track_object.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tracking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/video.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
         </state>
       </provider>
     </entry>
